@@ -8,21 +8,21 @@ node {
       sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=Sindalah_Demo01182023"
     }
   }
-  stages {
-        stage('Build') {
+  
+ stage('Build') {
             steps {
                 echo 'Building..'
 		
 				
             }
         }
-        stage('Test') {
+ stage('Test') {
             steps {
                 echo 'Testing..'
 				
             }
         }
-        stage('Deploy') {
+  stage('Deploy') {
             steps {
                 echo 'Deploying....'
 				
