@@ -5,8 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		def sonnarscan = tool 'sonarqube'
-				withSonarQubeEnv('sonarqube')
+		
 				
             }
         }
