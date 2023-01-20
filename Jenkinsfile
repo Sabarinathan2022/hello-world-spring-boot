@@ -4,7 +4,7 @@ node {
   }
   stage('SonarQube Analysis') {
     withSonarQubeEnv() {
-	    	mvn clean install
+	    	sh "mvn clean install"
       sh "./gradlew sonarqube"
     }
   }
